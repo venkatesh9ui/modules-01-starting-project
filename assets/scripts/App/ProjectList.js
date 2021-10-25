@@ -10,6 +10,11 @@ import * as DOMH from '../Utility/DOMHelper.js';
 
 const ProjectItem = 'abc';
 
+// console.log(DEFAULT_VALUE);
+// console.log(window); //we will get window object
+// console.log(this); // Here we will get undefined because modules also run in strict mode
+// console.log(window.DEFAULT_VALUE); // It will not work here because the import PortList is happening beofre app
+
 export class ProjectList {
   projects = [];
 
@@ -27,6 +32,10 @@ export class ProjectList {
   }
 
   connectDroppable() {
+    // console.log(window.DEFAULT_VALUE);
+    console.log(globalThis.DEFAULT_VALUE);
+    console.log(globalThis);
+
     const list = document.querySelector(`#${this.type}-projects ul`);
 
     list.addEventListener('dragenter', (event) => {
