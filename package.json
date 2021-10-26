@@ -1,0 +1,22 @@
+{
+  "name": "modules-01-starting-project",
+  "version": "1.0.0",
+  "description": "JavaScript - The Compelete Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatesh9ui/modules-01-starting-project.git"
+  },
+  "author": "L Venkatesh Miriyala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkatesh9ui/modules-01-starting-project/issues"
+  },
+  "homepage": "https://github.com/venkatesh9ui/modules-01-starting-project#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
