@@ -1,8 +1,13 @@
+// import * as _ from 'lodash'; // everything
+import * as _ from 'lodash/array'; // just array package
+
 import { ProjectList } from './App/ProjectList';
 
 // const DEFAULT_VALUE = 'MAX';
 // window.DEFAULT_VALUE = 'MAX';
 globalThis.DEFAULT_VALUE = 'MAX';
+
+console.log(_.difference([0, 1], [1, 2])); //lodash example
 
 class App {
   static init() {
